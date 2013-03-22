@@ -27,7 +27,7 @@ class qa_html_theme_layer extends qa_html_theme_base
 				"	{\n" .
 				"		if ( tags[i].length > 0 && alltags.indexOf(','+tags[i]+',') == -1 )\n" .
 				"		{\n" .
-				"			var error = '<div style=\"display:none\" class=\"qa-form-tall-error qa-tag-synonyms-error\">The tag \"'+tags[i]+'\" does not exist; you need " . number_format( qa_opt('tagging_tools_rep') ) . " points to create new tags.</div>';\n" .
+				"			var error = '<div style=\"display:none\" class=\"qa-form-tall-error qa-tag-synonyms-error\">Tag \"'+tags[i]+'\" nie istnieje. Potrzebujesz " . number_format( qa_opt('tagging_tools_rep') ) . " punktów aby tworzyć nowe tagi.</div>';\n" .
 				"			jQuery(error).insertAfter('#tags').slideDown('fast').delay(5000).slideUp('fast', function() { jQuery(this).detach() } );\n" .
 				"			return false;\n" .
 				"		}\n" .
